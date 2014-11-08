@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Infinite Fall</title>
+    <title>MegaJump</title>
     <style>
       #body{
         margin:0px;
@@ -20,22 +20,6 @@
   <body id="body">
     <canvas id="app">Canvas is not supported, try using a newer web browser.</canvas>
     <script src="bonsai-0.4.1.min.js"></script>
-    <script>
-    
-    
-    /* This is the game's code. Edit, give credit! */
-      var appFrame = document.getElementById("app");
-      bonsai.run(appFrame, {
-        code: function() {
-          var player = new Bitmap('player_version1.png').on('load', function() {
-            this.addTo('stage'); 
-          })
-        },
-        width: appFrame.width,
-        height: appFrame.height
-      });
-      
-      
-    </script>
+    <script src="main.js">/* main.js*/</script>
   </body>
 </html>
